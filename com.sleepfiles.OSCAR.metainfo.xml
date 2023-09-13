@@ -28,6 +28,7 @@
 	<update_contact>erico.mendonca@gmail.com</update_contact>
 	<translation/>
 	<releases>
+		<release date="2023-09-13" version="1.5.0"/>
 		<release date="2022-09-10" version="1.4.0"/>
 	</releases>
 
