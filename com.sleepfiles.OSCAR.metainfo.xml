@@ -22,11 +22,12 @@
 	<provides>
 		<id>com.sleepfiles.OSCAR.desktop</id>
 	</provides>
-	<appcategories>
-		<appcategory>Science</appcategory>
-	</appcategories>
+	<categories>
+		<category>Science</appcategory>
+		<category>Science/MedicalSoftware</category>
+	</categories>
 	<update_contact>erico.mendonca@gmail.com</update_contact>
-	<translation/>
+	<translation type="qt">${prefix}/share/OSCAR/Translations</translation>
 	<releases>
 		<release date="2024-03-15" version="1.5.2"/>
 		<release date="2023-11-03" version="1.5.1"/>
