@@ -9,7 +9,7 @@
 ---
 app-id: com.sleepfiles.OSCAR
 runtime: org.kde.Platform
-runtime-version: '5.15-22.08'
+runtime-version: '5.15-23.08'
 sdk: org.kde.Sdk
 command: OSCAR
 
@@ -48,8 +48,8 @@ modules:
       - LIBS+=-L/app/lib
     sources:
       - type: archive
-        url: https://gitlab.com/pholy/OSCAR-code/-/archive/1.5.2/OSCAR-code-1.5.2.tar.bz2
-        sha256: b8fb3122511f5ecf8f1a9458e38ff8515097c08e83640ec72ee39316a6b9c46b
+        url: https://gitlab.com/pholy/OSCAR-code/-/archive/1.5.2/OSCAR-code-1.5.3.tar.bz2
+        sha256: bfff54162f254acede05abddcf1be7c85c9790c3fc23cf7173078b07f130c89d
       - type: file
         path: com.sleepfiles.OSCAR.metainfo.xml
     build-commands:
