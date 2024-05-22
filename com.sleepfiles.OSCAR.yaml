@@ -48,8 +48,8 @@ modules:
       - LIBS+=-L/app/lib
     sources:
       - type: archive
-        url: https://gitlab.com/pholy/OSCAR-code/-/archive/1.5.3/OSCAR-code-v1.5.3.tar.bz2
-        sha256: 643600f5abab3904aab82cadfb767518b966ac7e1783a7a40ca1ed1edbf97962
+        url: https://gitlab.com/pholy/OSCAR-code/-/archive/1.5.3/OSCAR-code-1.5.3.tar.bz2
+        sha256: 76f80321255f7cbba274a963f62ce801fc1a4e2371d20f2950ebbc13ad6d3992
       - type: file
         path: com.sleepfiles.OSCAR.metainfo.xml
     build-commands:
