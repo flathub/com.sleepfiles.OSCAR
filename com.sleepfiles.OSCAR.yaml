@@ -5,7 +5,7 @@
 
 # Special OBS field because flatpak does not have a version field
 # Default will be '0' if the field is missing.
-#!BuildVersion: 1.5.0
+#!BuildVersion: 1.6.0
 ---
 app-id: com.sleepfiles.OSCAR
 runtime: org.kde.Platform
@@ -48,8 +48,8 @@ modules:
       - LIBS+=-L/app/lib
     sources:
       - type: archive
-        url: https://gitlab.com/pholy/OSCAR-code/-/archive/1.5.3/OSCAR-code-1.5.3.tar.bz2
-        sha256: 76f80321255f7cbba274a963f62ce801fc1a4e2371d20f2950ebbc13ad6d3992
+        url: https://gitlab.com/CrimsonNape/OSCAR-code/-/archive/v1.6.0/OSCAR-code-v1.6.0.tar.bz2
+        sha256: 43f71072e0b8e428ac5dd440819c808c47552f6bcd161a33abbc384cb38034bb
       - type: file
         path: com.sleepfiles.OSCAR.metainfo.xml
     build-commands:
