@@ -9,7 +9,7 @@
 ---
 app-id: com.sleepfiles.OSCAR
 runtime: org.kde.Platform
-runtime-version: '5.15-23.08'
+runtime-version: '5.15-24.08'
 sdk: org.kde.Sdk
 command: OSCAR
 
