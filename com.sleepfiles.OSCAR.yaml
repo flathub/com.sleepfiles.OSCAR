@@ -48,8 +48,8 @@ modules:
       - LIBS+=-L/app/lib
     sources:
       - type: archive
-        url: https://gitlab.com/CrimsonNape/OSCAR-code/-/archive/v1.6.0/OSCAR-code-v1.6.0.tar.bz2
-        sha256: 43f71072e0b8e428ac5dd440819c808c47552f6bcd161a33abbc384cb38034bb
+        url: https://gitlab.com/CrimsonNape/OSCAR-code/-/archive/v1.6.1/OSCAR-code-v1.6.1.tar.bz2
+        sha256: 7d1b5e4a2888537657742c9faed028b459f6cd54dd91e985604cc2d34b00fd33
       - type: file
         path: com.sleepfiles.OSCAR.metainfo.xml
     build-commands:
