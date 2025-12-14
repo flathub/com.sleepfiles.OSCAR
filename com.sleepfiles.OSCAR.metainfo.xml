@@ -13,10 +13,10 @@
 	<content_rating type="oars-1.1"/>
 	<screenshots>
 		<screenshot>
-			<image>http://www.apneaboard.com/wiki/images/2/23/OSCAR_Welcome_Screen.PNG</image>
+			<image>https://github.com/doccaz/com.sleepfiles.OSCAR/raw/refs/heads/master/OSCAR_Welcome_Screen.PNG</image>
 		</screenshot>
 		<screenshot type="default">
-			<image>https://www.apneaboard.com/wiki/images/7/79/OSCAR_daily_screen.png</image>
+			<image>https://github.com/doccaz/com.sleepfiles.OSCAR/raw/refs/heads/master/OSCAR_daily_screen.png</image>
 		</screenshot>
 	</screenshots>
 	<provides>
@@ -29,6 +29,7 @@
 	<update_contact>erico.mendonca@gmail.com</update_contact>
 	<translation type="qt">/usr/share/OSCAR/Translations</translation>
 	<releases>
+		<release date="2025-12-04" version="1.7.0"/>
 		<release date="2025-07-28" version="1.6.1"/>
 		<release date="2024-12-12" version="1.6.0"/>
 		<release date="2024-05-22" version="1.5.3"/>
