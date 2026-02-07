@@ -5,7 +5,7 @@
 
 # Special OBS field because flatpak does not have a version field
 # Default will be '0' if the field is missing.
-#!BuildVersion: 1.6.0
+#!BuildVersion: 1.7.0
 ---
 app-id: com.sleepfiles.OSCAR
 runtime: org.kde.Platform
@@ -21,6 +21,7 @@ finish-args:
   - --filesystem=home
   - --filesystem=/media
   - --filesystem=/run/media
+  - --env=QT_QPA_PLATFORMTHEME=gtk3
   - --device=dri
 build-options:
   env:
