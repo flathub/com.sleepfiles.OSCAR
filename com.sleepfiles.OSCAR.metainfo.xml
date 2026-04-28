@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<component type="desktop-application">
 	<id>com.sleepfiles.OSCAR</id>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0</project_license>
@@ -9,14 +9,13 @@
 		<p>OSCAR is PC software developed for reviewing and exploring data produced by CPAP and related machines used in the treatment of sleep apnea.</p>
 	</description>
 	<launchable type="desktop-id">com.sleepfiles.OSCAR.desktop</launchable>
-	<url type="homepage">https://sleepfiles.com/OSCAR/</url>
 	<content_rating type="oars-1.1"/>
 	<screenshots>
 		<screenshot>
-			<image>https://github.com/doccaz/com.sleepfiles.OSCAR/raw/refs/heads/master/OSCAR_Welcome_Screen.PNG</image>
+			<image>https://raw.githubusercontent.com/flathub/com.sleepfiles.OSCAR/b7855b9b4b3afa830427d7d2cc037fd5bee020cf/OSCAR_Welcome_Screen.png</image>
 		</screenshot>
 		<screenshot type="default">
-			<image>https://github.com/doccaz/com.sleepfiles.OSCAR/raw/refs/heads/master/OSCAR_daily_screen.png</image>
+			<image>https://raw.githubusercontent.com/flathub/com.sleepfiles.OSCAR/b7855b9b4b3afa830427d7d2cc037fd5bee020cf/OSCAR_daily_screen.png</image>
 		</screenshot>
 	</screenshots>
 	<provides>
@@ -27,30 +26,27 @@
 		<category>MedicalSoftware</category>
 	</categories>
 	<update_contact>erico.mendonca@gmail.com</update_contact>
-	<translation type="qt">/usr/share/OSCAR/Translations</translation>
+	<!--<translation type="qt">/usr/share/OSCAR/Translations</translation> -->
 	<releases>
-		<release date="2025-12-04" version="1.7.0"/>
-		<release date="2025-07-28" version="1.6.1"/>
-		<release date="2024-12-12" version="1.6.0"/>
-		<release date="2024-05-22" version="1.5.3"/>
-		<release date="2024-03-15" version="1.5.2"/>
-		<release date="2023-11-03" version="1.5.1"/>
-		<release date="2023-09-13" version="1.5.0"/>
-		<release date="2022-09-10" version="1.4.0"/>
+		<release version="1.7.1" date="2026-04-28"/>
+		<release version="1.7.0" date="2025-12-04" />
+		<release version="1.6.1" date="2025-07-28" />
+		<release version="1.6.0" date="2024-12-12" />
+		<release version="1.5.3" date="2024-05-22" />
+		<release version="1.5.2" date="2024-03-15" />
+		<release version="1.5.1" date="2023-11-03"/>
+		<release version="1.5.0" date="2023-09-13"/>
+		<release version="1.4.0" date="2022-09-10"/>
 	</releases>
 
-	<!--FIXME: You can use a project or developer name if there's no company-->
-	<developer_name>The OSCAR Team</developer_name>
-
-	<!--FIXME: where to report bugs for the application-->
+	<developer id="com.sleepfiles">
+		<name>The OSCAR Team</name>
+	</developer>
+	<url type="homepage">https://sleepfiles.com/OSCAR</url>
 	<url type="bugtracker">https://gitlab.com/CrimsonNape/OSCAR-code/-/issues</url>
-
-	<!--FIXME: where to donate to the application-->
-	<url type="donation">https://www.sleepfiles.com/OSCAR/</url>
-
-	<!--FIXME: where on the internet users can find help-->
-	<url type="help">http://www.apneaboard.com/wiki/index.php/OSCAR_Help</url>
-
-	<!--FIXME: where to submit translations-->
-	<url type="translate">http://www.apneaboard.com/wiki/index.php/Translators</url>
+	<url type="vcs-browser">https://gitlab.com/CrimsonNape/OSCAR-code</url>
+	<url type="donation">https://www.sleepfiles.com/OSCAR</url>
+	<url type="help">https://www.apneaboard.com/wiki/index.php/OSCAR_Help</url>
+	<url type="translate">https://www.apneaboard.com/wiki/index.php/Translators</url>
+	<url type="contribute">https://gitlab.com/CrimsonNape/OSCAR-code/-/blob/master/CONTRIBUTING.md</url>
 </component>

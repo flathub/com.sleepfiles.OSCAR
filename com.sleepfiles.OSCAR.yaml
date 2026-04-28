@@ -1,15 +1,6 @@
-######################################################
-# Flatpak manifest for OSCAR
-# Erico Mendonca <erico.mendonca@gmail.com> Jan 2022 
-######################################################
-
-# Special OBS field because flatpak does not have a version field
-# Default will be '0' if the field is missing.
-#!BuildVersion: 1.7.0
----
 app-id: com.sleepfiles.OSCAR
 runtime: org.kde.Platform
-runtime-version: '5.15-24.08'
+runtime-version: '6.10'
 sdk: org.kde.Sdk
 command: OSCAR
 
@@ -27,38 +18,31 @@ build-options:
   env:
     - QMAKE_CXXFLAGS: -L/app/lib
     - QMAKE_LDFLAGS: -L/app/lib
-    
+
 modules:
-  - name: glu
-    config-opts:
-      - --disable-static
-    sources:
-      - type: archive
-        url: https://mesa.freedesktop.org/archive/glu/glu-9.0.2.tar.xz
-        sha256: 6e7280ff585c6a1d9dfcdf2fca489251634b3377bfc33c29e4002466a38d02d4
-    cleanup:
-      - /include
-      - '*.a'
-      - '*.la'
-      - /lib/pkgconfig
-  
+  - shared-modules/glu/glu-9.json
+
   - name: OSCAR
     buildsystem: qmake
     config-opts:
       - OSCAR_QT.pro
       - LIBS+=-L/app/lib
+    build-commands:
+      - install -Dm755 oscar/OSCAR ${FLATPAK_DEST}/bin/OSCAR
+      - install -Dm644 Building/Linux/OSCAR.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+      - desktop-file-edit --set-icon=com.sleepfiles.OSCAR Building/Linux/OSCAR.desktop
+      - desktop-file-edit --set-comment='Cross-platform sleep tracking program for CPAP and Oximetry data' Building/Linux/OSCAR.desktop
+      - install -Dm644 Building/Linux/OSCAR.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      - install -Dm644 com.sleepfiles.OSCAR.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
+      # Copy Translation files
+      - cp -dpr oscar/Translations ${FLATPAK_DEST}/bin
     sources:
-      - type: archive
-        url: https://gitlab.com/CrimsonNape/OSCAR-code/-/archive/v1.7.0/OSCAR-code-v1.7.0.tar.bz2
-        sha256: a2fe3fb1e66d8ace31aa3743d702c095804caf7d7c600c2d07e21f91e94ab600
+      - type: git
+        url: https://gitlab.com/CrimsonNape/OSCAR-code.git
+        tag: v1.7.1
+        commit: 4b92097b0ee0e5b09b8030e083faa60aab76937c
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
       - type: file
         path: com.sleepfiles.OSCAR.metainfo.xml
-    build-commands:
-      # the generated makefiles do not support make install(?)
-      - install -D -m 755 oscar/OSCAR $FLATPAK_DEST/bin/OSCAR
-      - install -D -m 644 Building/Linux/OSCAR.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/com.sleepfiles.OSCAR.svg
-      - cp -dpR oscar/{Translations,Html} $FLATPAK_DEST/bin/
-      - install -Dm644 Building/Linux/OSCAR.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
-      - desktop-file-edit --set-icon=com.sleepfiles.OSCAR --set-comment='Cross-platform sleep tracking program for CPAP and Oximetry data' ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
-      - install -D -m 644 com.sleepfiles.OSCAR.metainfo.xml $FLATPAK_DEST/share/metainfo/com.sleepfiles.OSCAR.metainfo.xml
-      
