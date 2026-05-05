@@ -34,8 +34,8 @@ modules:
       - desktop-file-edit --set-comment='Cross-platform sleep tracking program for CPAP and Oximetry data' Building/Linux/OSCAR.desktop
       - install -Dm644 Building/Linux/OSCAR.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - install -Dm644 com.sleepfiles.OSCAR.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
-      # Copy Translation files
-      - cp -dpr oscar/Translations ${FLATPAK_DEST}/bin
+      # Copy Translation and HTML files
+      - cp -dpR oscar/{Translations,Html} $FLATPAK_DEST/bin/      
     sources:
       - type: git
         url: https://gitlab.com/CrimsonNape/OSCAR-code.git
