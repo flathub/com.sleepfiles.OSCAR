@@ -23,11 +23,11 @@ modules:
   - shared-modules/glu/glu-9.json
 
   - name: libxcb-cursor
-    buildsystem: meson
+    buildsystem: autotools
     sources:
       - type: archive
-        url: https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor/-/archive/xcb-util-cursor-0.1.4/libxcb-cursor-xcb-util-cursor-0.1.4.tar.bz2
-        sha256: c619c8a9cdbbe266c58267314a8669f1657123e4e5d3c9b3b4c9f4109582f970
+        url: https://xorg.freedesktop.org/releases/individual/lib/xcb-util-cursor-0.1.4.tar.xz
+        sha256: 28dcfe90bcab7b3561abe0dd58eb6832aa9cc77cfe42fcdfa4ebe20d605231fb
     cleanup:
       - /include
       - /lib/pkgconfig
