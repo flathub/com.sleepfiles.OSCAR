@@ -26,8 +26,8 @@ modules:
     buildsystem: meson
     sources:
       - type: archive
-        url: https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor/-/archive/0.1.4/libxcb-cursor-0.1.4.tar.bz2
-        sha256: 6b70dd2f6c347d448c2d6140fdb70429d17135e6713ea6c095df1b34e4010e6a
+        url: https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor/-/archive/xcb-util-cursor-0.1.4/libxcb-cursor-xcb-util-cursor-0.1.4.tar.bz2
+        sha256: c619c8a9cdbbe266c58267314a8669f1657123e4e5d3c9b3b4c9f4109582f970
     cleanup:
       - /include
       - /lib/pkgconfig
