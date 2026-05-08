@@ -9,7 +9,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --talk-name=org.freedesktop.Notifications
-  - --talk-name=org.freedesktop.portal.Desktop
   - --filesystem=home
   - --filesystem=/media
   - --filesystem=/run/media
