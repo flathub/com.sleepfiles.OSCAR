@@ -9,6 +9,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.portal.Desktop
   - --filesystem=home
   - --filesystem=/media
   - --filesystem=/run/media
@@ -21,6 +22,16 @@ build-options:
 
 modules:
   - shared-modules/glu/glu-9.json
+
+  - name: libxcb-cursor
+    buildsystem: meson
+    sources:
+      - type: archive
+        url: https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor/-/archive/0.1.4/libxcb-cursor-0.1.4.tar.bz2
+        sha256: 6b70dd2f6c347d448c2d6140fdb70429d17135e6713ea6c095df1b34e4010e6a
+    cleanup:
+      - /include
+      - /lib/pkgconfig
 
   - name: OSCAR
     buildsystem: qmake
