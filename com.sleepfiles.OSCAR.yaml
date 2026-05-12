@@ -54,5 +54,10 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+      # Wayland window-mapping fix: defer activateWindow()/raise() until after
+      # show() so Qt 6 can obtain an XDG activation token from the compositor.
+      # Patch submitted upstream; remove once merged in a new OSCAR release.
+      - type: patch
+        path: wayland-window-fix.patch
       - type: file
         path: com.sleepfiles.OSCAR.metainfo.xml
