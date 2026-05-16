@@ -60,5 +60,9 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+      # Force main window to paint before the progress dialog opens so the
+      # Wayland surface has a committed buffer before any transient appears.
+      - type: patch
+        path: wayland-window-fix.patch
       - type: file
         path: com.sleepfiles.OSCAR.metainfo.xml
