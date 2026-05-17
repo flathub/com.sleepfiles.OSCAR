@@ -16,13 +16,7 @@ finish-args:
   - --device=dri
 build-options:
   env:
-    # BROKEN_OPENGL_BUILD disables the prepOpenGL() warm-up in mainwindow.cpp,
-    # which creates a QOpenGLWidget before show() is called.  On Wayland this
-    # forces premature native-window creation, corrupting the xdg_surface state
-    # before the compositor can complete the configure→ack handshake — leaving
-    # the main window permanently unmapped.  The actual chart QOpenGLWidgets
-    # are unaffected; they still initialise lazily on first paint.
-    - QMAKE_CXXFLAGS: -L/app/lib -DBROKEN_OPENGL_BUILD
+    - QMAKE_CXXFLAGS: -L/app/lib
     - QMAKE_LDFLAGS: -L/app/lib
 
 modules:
@@ -60,9 +54,5 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-      # Force main window to paint before the progress dialog opens so the
-      # Wayland surface has a committed buffer before any transient appears.
-      - type: patch
-        path: wayland-window-fix.patch
       - type: file
         path: com.sleepfiles.OSCAR.metainfo.xml
