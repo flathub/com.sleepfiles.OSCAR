@@ -28,6 +28,7 @@
 	<update_contact>erico.mendonca@gmail.com</update_contact>
 	<!--<translation type="qt">/usr/share/OSCAR/Translations</translation> -->
 	<releases>
+		<release version="2.0.1" date="2026-06-22"/>
 		<release version="1.7.1" date="2026-04-28"/>
 		<release version="1.7.0" date="2025-12-04" />
 		<release version="1.6.1" date="2025-07-28" />
@@ -43,7 +44,7 @@
 		<name>The OSCAR Team</name>
 	</developer>
 	<url type="homepage">https://sleepfiles.com/OSCAR</url>
-	<url type="bugtracker">https://gitlab.com/CrimsonNape/OSCAR-code/-/issues</url>
+	<url type="bugtracker">https://gitlab.com/CrimsonNape/OSCAR-SQL/-/issues</url>
 	<url type="vcs-browser">https://gitlab.com/CrimsonNape/OSCAR-code</url>
 	<url type="donation">https://www.sleepfiles.com/OSCAR</url>
 	<url type="help">https://www.apneaboard.com/wiki/index.php/OSCAR_Help</url>
