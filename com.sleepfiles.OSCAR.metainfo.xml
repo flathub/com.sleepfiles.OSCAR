@@ -7,6 +7,15 @@
 	<summary>The Open Source CPAP Analysis Reporter</summary>
 	<description>
 		<p>OSCAR is PC software developed for reviewing and exploring data produced by CPAP and related machines used in the treatment of sleep apnea.</p>
+		<p>It is a derivative of SleepyHead and reads data from the SD cards of supported CPAP machines and oximeters, presenting detailed graphs, statistics and reports.</p>
+		<p>Features:</p>
+		<ul>
+			<li>Detailed daily graphs of pressure, flow, leaks, events and oximetry</li>
+			<li>Overview, statistics and printable reports across days, weeks and months</li>
+			<li>Data stored in a local SQLite database that other tools can query directly</li>
+			<li>Flexible CSV export and profile import/export</li>
+		</ul>
+		<p>OSCAR is not a medical device and is not intended for diagnosis. Discuss your therapy data with your doctor.</p>
 	</description>
 	<launchable type="desktop-id">com.sleepfiles.OSCAR.desktop</launchable>
 	<content_rating type="oars-1.1"/>
@@ -21,6 +30,11 @@
 	<provides>
 		<id>com.sleepfiles.OSCAR.desktop</id>
 	</provides>
+	<keywords>
+		<keyword>CPAP</keyword>
+		<keyword>sleep apnea</keyword>
+		<keyword>oximetry</keyword>
+	</keywords>
 	<categories>
 		<category>Science</category>
 		<category>MedicalSoftware</category>
@@ -28,7 +42,17 @@
 	<update_contact>erico.mendonca@gmail.com</update_contact>
 	<!--<translation type="qt">/usr/share/OSCAR/Translations</translation> -->
 	<releases>
-		<release version="2.0.1" date="2026-06-22"/>
+		<release version="2.0.1" date="2026-06-22">
+			<description>
+				<p>OSCAR 2.0 replaces all previous versions of OSCAR.</p>
+				<ul>
+					<li>Data is now stored in an SQLite database in a separate OSCAR20_Data folder</li>
+					<li>Existing OSCAR 1.x data can be converted on first start or imported per profile</li>
+					<li>New CSV export wizard and profile import/export</li>
+				</ul>
+			</description>
+			<url type="details">https://gitlab.com/CrimsonNape/OSCAR-SQL/-/blob/v2.0.1/Notes/Getting%20Started%20with%20OSCAR%202.0.md</url>
+		</release>
 		<release version="1.7.1" date="2026-04-28"/>
 		<release version="1.7.0" date="2025-12-04" />
 		<release version="1.6.1" date="2025-07-28" />
@@ -45,9 +69,9 @@
 	</developer>
 	<url type="homepage">https://sleepfiles.com/OSCAR</url>
 	<url type="bugtracker">https://gitlab.com/CrimsonNape/OSCAR-SQL/-/issues</url>
-	<url type="vcs-browser">https://gitlab.com/CrimsonNape/OSCAR-code</url>
+	<url type="vcs-browser">https://gitlab.com/CrimsonNape/OSCAR-SQL</url>
 	<url type="donation">https://www.sleepfiles.com/OSCAR</url>
 	<url type="help">https://www.apneaboard.com/wiki/index.php/OSCAR_Help</url>
 	<url type="translate">https://www.apneaboard.com/wiki/index.php/Translators</url>
-	<url type="contribute">https://gitlab.com/CrimsonNape/OSCAR-code/-/blob/master/CONTRIBUTING.md</url>
+	<url type="contribute">https://gitlab.com/CrimsonNape/OSCAR-SQL/-/blob/master/CONTRIBUTING.md</url>
 </component>
