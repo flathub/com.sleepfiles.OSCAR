@@ -35,12 +35,12 @@ modules:
       - install -Dm644 Building/Linux/OSCAR20.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - install -Dm644 com.sleepfiles.OSCAR.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
       # Copy Translation and HTML files
-      - cp -dpR oscar/{Translations,Html} $FLATPAK_DEST/bin/      
+      - cp -dpR oscar/{Translations,Html} $FLATPAK_DEST/bin/
     sources:
       - type: git
         url: https://gitlab.com/CrimsonNape/OSCAR-SQL.git
-        tag: v2.0.1
-        commit: 377654fe6d80e8c408d0c7b050acbd0043f5a932
+        tag: v2.1.0
+        commit: 82ec7db2ca90f83cf3490d20051e547cf9df4f28
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$

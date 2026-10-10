@@ -42,6 +42,19 @@
 	<update_contact>erico.mendonca@gmail.com</update_contact>
 	<!--<translation type="qt">/usr/share/OSCAR/Translations</translation> -->
 	<releases>
+		<release version="2.1.0" date="2026-10-08">
+			<description>
+				<p>New devices, fixes and improvements.</p>
+				<ul>
+					<li>Support for Yuwell YH-560, YH-920 and YH-480C, Sefam S.Box and Néa, Sanrai Reve Auto, BMC G3X E5 B25A Plus, and Apex Medical Apex XT (experimental)</li>
+					<li>Apple Health files and the Ukrainian language are now supported</li>
+					<li>Central and obstructive AHI are now reported</li>
+					<li>Clearer instructions on first use, and an option not to update the database schema</li>
+					<li>Many fixes in the ResMed, PRS1, BMC and Löwenstein loaders, CSV export, profile restore and translations</li>
+				</ul>
+			</description>
+			<url type="details">https://gitlab.com/CrimsonNape/OSCAR-SQL/-/blob/v2.1.0/Htmldocs/release_notes.html</url>
+		</release>
 		<release version="2.0.1" date="2026-06-22">
 			<description>
 				<p>OSCAR 2.0 replaces all previous versions of OSCAR.</p>
@@ -53,15 +66,95 @@
 			</description>
 			<url type="details">https://gitlab.com/CrimsonNape/OSCAR-SQL/-/blob/v2.0.1/Notes/Getting%20Started%20with%20OSCAR%202.0.md</url>
 		</release>
-		<release version="1.7.1" date="2026-04-28"/>
-		<release version="1.7.0" date="2025-12-04" />
-		<release version="1.6.1" date="2025-07-28" />
-		<release version="1.6.0" date="2024-12-12" />
-		<release version="1.5.3" date="2024-05-22" />
-		<release version="1.5.2" date="2024-03-15" />
-		<release version="1.5.1" date="2023-11-03"/>
-		<release version="1.5.0" date="2023-09-13"/>
-		<release version="1.4.0" date="2022-09-10"/>
+		<release version="1.7.1" date="2026-04-28">
+			<description>
+				<ul>
+					<li>Support for the ResMed Sleepmate series and Yuwell YH-500/YH-580 CPAPs</li>
+					<li>SpO2 support in the BMC loader and a new SpO2 baseline calculation setting</li>
+					<li>Fixed flow size in the vREM loader</li>
+					<li>Russian and Traditional Chinese translation updates</li>
+				</ul>
+			</description>
+		</release>
+		<release version="1.7.0" date="2025-12-04">
+			<description>
+				<ul>
+					<li>Support for the vREM and BMC CPAPs</li>
+					<li>Improved Steady Breathing</li>
+					<li>Fixed crashes when importing into a new profile and when using a pop-out graph</li>
+					<li>Import dialog fixes and better handling of existing directories</li>
+					<li>Qt6 build support</li>
+				</ul>
+			</description>
+		</release>
+		<release version="1.6.1" date="2025-07-28">
+			<description>
+				<ul>
+					<li>Support for the Wellue/Viatom POD-2 with low battery warning</li>
+					<li>Search by apnea length, CSR/PB and large leaks</li>
+					<li>GUI for Steady Breathing, ALT+B to add a bookmark, and configurable Daily Notes font size</li>
+					<li>Fixed a crash in search and VPAPauto pressure graph colors</li>
+				</ul>
+			</description>
+		</release>
+		<release version="1.6.0" date="2024-12-12">
+			<description>
+				<ul>
+					<li>Support for the iBreeze 30ST/A, ResMed AirCurve 11 series and Viatom/Wellue O2Ring-S</li>
+					<li>Native file dialogs on Windows and an option to disable daily graph titles</li>
+					<li>Remembers the last used CSV export folder</li>
+					<li>Fixed several crashes, profile and unit conversion issues, and keyboard navigation with bookmarks</li>
+				</ul>
+			</description>
+		</release>
+		<release version="1.5.3" date="2024-05-22">
+			<description>
+				<ul>
+					<li>Daily search for any journal item (notes, bookmarks, weight, feelings)</li>
+					<li>Import (restore) journal and a configurable daily left sidebar</li>
+					<li>Fixed profiles without a name blocking access to data and statistics showing future dates</li>
+				</ul>
+			</description>
+		</release>
+		<release version="1.5.2" date="2024-03-15">
+			<description>
+				<ul>
+					<li>Profiles can now be renamed</li>
+					<li>Graph hints at the bottom of the Daily and Overview tabs</li>
+					<li>Statistics improvements, including alternating row colors</li>
+					<li>Fixed daylight saving time display issues, lost snore events and iBreeze loader problems</li>
+				</ul>
+			</description>
+		</release>
+		<release version="1.5.1" date="2023-11-03">
+			<description>
+				<ul>
+					<li>Added the DS Go Auto 500G150 model</li>
+					<li>Fixed high resolution display issues, with a new setting in Preferences > Appearance</li>
+					<li>Re-enabled biometrics and fixed update checking</li>
+				</ul>
+			</description>
+		</release>
+		<release version="1.5.0" date="2023-09-13">
+			<description>
+				<ul>
+					<li>Support for ResMed AirSense 11, Hoffrichter Point 3 and Resvent machines</li>
+					<li>Clinical and Permissive compliance modes</li>
+					<li>Search in the Daily screen, backup of graph settings and Shift+click zoom</li>
+					<li>Fixed high resolution display issues and improved PrismaLine bilevel support</li>
+				</ul>
+			</description>
+		</release>
+		<release version="1.4.0" date="2022-09-10">
+			<description>
+				<ul>
+					<li>Support for Philips Respironics DreamStation 2</li>
+					<li>More Philips Respironics devices tested and fully supported</li>
+					<li>Fixed pressure settings and events on BiPAP autoSV Advanced 30</li>
+					<li>Fixed session export statistics and a rare crash importing corrupted data</li>
+				</ul>
+			</description>
+		</release>
 	</releases>
 
 	<developer id="com.sleepfiles">
