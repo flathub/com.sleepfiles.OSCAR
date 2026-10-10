@@ -42,8 +42,18 @@
 	<update_contact>erico.mendonca@gmail.com</update_contact>
 	<!--<translation type="qt">/usr/share/OSCAR/Translations</translation> -->
 	<releases>
-		<release version="2.1.0" date="2026-10-10">
-			<description></description>
+		<release version="2.1.0" date="2026-10-08">
+			<description>
+				<p>New devices, fixes and improvements.</p>
+				<ul>
+					<li>Support for Yuwell YH-560, YH-920 and YH-480C, Sefam S.Box and Néa, Sanrai Reve Auto, BMC G3X E5 B25A Plus, and Apex Medical Apex XT (experimental)</li>
+					<li>Apple Health files and the Ukrainian language are now supported</li>
+					<li>Central and obstructive AHI are now reported</li>
+					<li>Clearer instructions on first use, and an option not to update the database schema</li>
+					<li>Many fixes in the ResMed, PRS1, BMC and Löwenstein loaders, CSV export, profile restore and translations</li>
+				</ul>
+			</description>
+			<url type="details">https://gitlab.com/CrimsonNape/OSCAR-SQL/-/blob/v2.1.0/Htmldocs/release_notes.html</url>
 		</release>
 		<release version="2.0.1" date="2026-06-22">
 			<description>
@@ -57,11 +67,11 @@
 			<url type="details">https://gitlab.com/CrimsonNape/OSCAR-SQL/-/blob/v2.0.1/Notes/Getting%20Started%20with%20OSCAR%202.0.md</url>
 		</release>
 		<release version="1.7.1" date="2026-04-28"/>
-		<release version="1.7.0" date="2025-12-04"/>
-		<release version="1.6.1" date="2025-07-28"/>
-		<release version="1.6.0" date="2024-12-12"/>
-		<release version="1.5.3" date="2024-05-22"/>
-		<release version="1.5.2" date="2024-03-15"/>
+		<release version="1.7.0" date="2025-12-04" />
+		<release version="1.6.1" date="2025-07-28" />
+		<release version="1.6.0" date="2024-12-12" />
+		<release version="1.5.3" date="2024-05-22" />
+		<release version="1.5.2" date="2024-03-15" />
 		<release version="1.5.1" date="2023-11-03"/>
 		<release version="1.5.0" date="2023-09-13"/>
 		<release version="1.4.0" date="2022-09-10"/>
