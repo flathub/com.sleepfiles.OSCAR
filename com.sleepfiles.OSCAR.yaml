@@ -31,7 +31,8 @@ modules:
       - install -Dm755 oscar/OSCAR20 ${FLATPAK_DEST}/bin/OSCAR20
       - install -Dm644 Building/Linux/OSCAR20.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
       - desktop-file-edit --set-icon=com.sleepfiles.OSCAR Building/Linux/OSCAR20.desktop
-      - desktop-file-edit --set-comment='Cross-platform sleep tracking program for CPAP and Oximetry data' Building/Linux/OSCAR20.desktop
+      - desktop-file-edit --set-comment='Cross-platform sleep tracking program for
+        CPAP and Oximetry data' Building/Linux/OSCAR20.desktop
       - install -Dm644 Building/Linux/OSCAR20.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - install -Dm644 com.sleepfiles.OSCAR.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
       # Copy Translation and HTML files
@@ -39,8 +40,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/CrimsonNape/OSCAR-SQL.git
-        tag: v2.1.0
-        commit: 82ec7db2ca90f83cf3490d20051e547cf9df4f28
+        tag: v2.1.1
+        commit: 4f14624616d62c6986788417bc5c519c807a7ade
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
