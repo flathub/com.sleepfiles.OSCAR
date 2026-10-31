@@ -31,8 +31,7 @@ modules:
       - install -Dm755 oscar/OSCAR20 ${FLATPAK_DEST}/bin/OSCAR20
       - install -Dm644 Building/Linux/OSCAR20.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
       - desktop-file-edit --set-icon=com.sleepfiles.OSCAR Building/Linux/OSCAR20.desktop
-      - desktop-file-edit --set-comment='Cross-platform sleep tracking program for
-        CPAP and Oximetry data' Building/Linux/OSCAR20.desktop
+      - desktop-file-edit --set-comment='Cross-platform sleep tracking program for CPAP and Oximetry data' Building/Linux/OSCAR20.desktop
       - install -Dm644 Building/Linux/OSCAR20.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - install -Dm644 com.sleepfiles.OSCAR.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
       # Copy Translation and HTML files
