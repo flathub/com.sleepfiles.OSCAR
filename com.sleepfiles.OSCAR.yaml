@@ -39,8 +39,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/CrimsonNape/OSCAR-SQL.git
-        tag: v2.1.0
-        commit: 82ec7db2ca90f83cf3490d20051e547cf9df4f28
+        tag: v2.1.1
+        commit: 4f14624616d62c6986788417bc5c519c807a7ade
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$

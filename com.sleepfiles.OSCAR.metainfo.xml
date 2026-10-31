@@ -42,6 +42,18 @@
 	<update_contact>erico.mendonca@gmail.com</update_contact>
 	<!--<translation type="qt">/usr/share/OSCAR/Translations</translation> -->
 	<releases>
+		<release version="2.1.1" date="2026-10-31">
+			<description>
+				<p>New devices, oximetry improvements and many fixes.</p>
+				<ul>
+					<li>Headless command line data import, and a Windows portable mode</li>
+					<li>Support for the Löwenstein Prisma VENT 50-C (experimental) and Weinmann SOMNObalance e</li>
+					<li>SpO2 drops can use a rolling, whole night, first hour or fixed baseline, and oximetry data can be split to match the CPAP day split</li>
+					<li>Fixes in the ResMed oximetry, BMC, Löwenstein Prisma and Sefam S.Box loaders, duplicated respiratory events, Alt+Tab on Linux, and the per-profile Steady Breathing setting</li>
+				</ul>
+			</description>
+			<url type="details">https://gitlab.com/CrimsonNape/OSCAR-SQL/-/blob/v2.1.1/Htmldocs/release_notes.html</url>
+		</release>
 		<release version="2.1.0" date="2026-10-08">
 			<description>
 				<p>New devices, fixes and improvements.</p>
@@ -130,7 +142,7 @@
 			<description>
 				<ul>
 					<li>Added the DS Go Auto 500G150 model</li>
-					<li>Fixed high resolution display issues, with a new setting in Preferences > Appearance</li>
+					<li>Fixed high resolution display issues, with a new setting in Preferences &gt; Appearance</li>
 					<li>Re-enabled biometrics and fixed update checking</li>
 				</ul>
 			</description>
